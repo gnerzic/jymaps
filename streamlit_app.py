@@ -9,7 +9,7 @@ st.set_page_config(page_title="Historian Map Generator", layout="wide")
 
 # --- Sidebar Inputs ---
 st.sidebar.header("Map Configuration")
-map_name = st.sidebar.text_input("Output Filename", "Chesapeake")
+map_name = st.sidebar.text_input("Output Filename", "MyMap")
 
 # Coordinate Inputs
 st.sidebar.subheader("Coordinates")
