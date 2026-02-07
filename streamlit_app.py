@@ -13,10 +13,10 @@ map_name = st.sidebar.text_input("Output Filename", "MyMap")
 
 # Coordinate Inputs
 st.sidebar.subheader("Coordinates")
-lon_min = st.sidebar.number_input("Min Longitude", value=-80.0)
+lon_min = st.sidebar.number_input("Min Longitude", value=-60.0)
 lon_max = st.sidebar.number_input("Max Longitude", value=20.0)
-lat_min = st.sidebar.number_input("Min Latitude", value=-10.0)
-lat_max = st.sidebar.number_input("Max Latitude", value=50.0)
+lat_min = st.sidebar.number_input("Min Latitude", value=-20.0)
+lat_max = st.sidebar.number_input("Max Latitude", value=60.0)
 
 # Gridline Spacing Inputs
 st.sidebar.subheader("Gridline Spacing")
