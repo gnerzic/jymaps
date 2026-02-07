@@ -13,17 +13,17 @@ map_name = st.sidebar.text_input("Output Filename", "Chesapeake")
 
 # Coordinate Inputs
 st.sidebar.subheader("Coordinates")
-lon_min = st.sidebar.number_input("Min Longitude", value=-50.0)
-lon_max = st.sidebar.number_input("Max Longitude", value=-50.0)
-lat_min = st.sidebar.number_input("Min Latitude", value=50.0)
+lon_min = st.sidebar.number_input("Min Longitude", value=-80.0)
+lon_max = st.sidebar.number_input("Max Longitude", value=20.0)
+lat_min = st.sidebar.number_input("Min Latitude", value=-10.0)
 lat_max = st.sidebar.number_input("Max Latitude", value=50.0)
 
 # Gridline Spacing Inputs
 st.sidebar.subheader("Gridline Spacing")
 options = [20, 10, 5, 1, 0]
 
-lon_spacing = st.sidebar.selectbox("Longitude Line Spacing (degrees)", options, index=3)  # Default to 1
-lat_spacing = st.sidebar.selectbox("Latitude Line Spacing (degrees)", options, index=3)  # Default to 1
+lon_spacing = st.sidebar.selectbox("Longitude Line Spacing (degrees)", options, index=1)  # Default to 1
+lat_spacing = st.sidebar.selectbox("Latitude Line Spacing (degrees)", options, index=1)  # Default to 1
 
 
 # --- Map Logic ---
